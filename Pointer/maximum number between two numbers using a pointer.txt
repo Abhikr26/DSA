@@ -1,0 +1,38 @@
+// Write a program in C to find the maximum number between two numbers using a pointer.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    //declaring variables
+    int a, b;
+    int *x, *y;
+
+    //z and x is storing the address of a and b
+    x = &a;
+    y = &b;
+
+    //taking value of a and b from the user
+    cout << "Value of a : ";
+    cin >> a;
+    cout << "Value of b : ";
+    cin >> b;
+
+    //printing the value of a
+    cout << "The value of a is " << *x << endl;
+
+    //printing the value of b
+    cout << "The value of b is " << *y << endl;
+
+    //checking the max value usign if..else condition
+    if (*x > *y)
+    {
+        cout << *x << " is greater than " << *y << endl;
+    }
+    else
+    {
+        cout << *y << " is greater than  " << *x << endl;
+    }
+
+    return 0;
+}
