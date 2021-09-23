@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    //declaring variables
+    int m = 10;
+    int *z;
+
+    //z is storing the address of m
+    z = &m;
+
+    //printing the value of z
+    cout << "the value of z is " << *z << endl;
+    //printing the value of m
+    cout << "The value of m is " << m << endl;
+
+    return 0;
+}
