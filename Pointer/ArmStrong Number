@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n,revNo,cubic=0,num;
+    cout<<"Enter a number : "<<endl;
+    cin>>n;
+    num=n;
+    while(n>0){
+        revNo=n%10;
+        cubic=(revNo*revNo*revNo)+cubic;
+        n=n/10;
+    }
+    if(num==cubic){
+        cout<<"Arm Strong Number"<<endl;
+    }
+    else{
+        cout<<"No"<<endl;
+    }
+    return 0;
+}
